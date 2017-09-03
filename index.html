@@ -11,12 +11,15 @@
       <div class="page-header">
         <h1>Beer Review</h1>
       </div>
-
+      <button id="reverseButton" type="button">Reverse the order of the listing</button>
+      <button id="sortButton" type="button">Sort the Beers</button>
+      <button id="clearButton" type="button">Clear the Beers List</button>
       <section class="beers">
         <h2>Beers</h2>
-        <ul class="beers-list"></ul>
+        <ul class="beers-list">
+        </ul>
       </section>
-
+      
       <form class="beer-form">
         <h3>Add a New Beer</h3>
 
@@ -30,6 +33,18 @@
           <input type="text"
             class="category-input form-control"
             placeholder="Category">
+        </div>
+
+        <div class="form-group">
+          <select type="text"
+            class="rating form-control">
+            <option selected disabled>Rate the Beer</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </div>
         
         <button class="btn btn-primary post-beer" type="button">Post</button>
